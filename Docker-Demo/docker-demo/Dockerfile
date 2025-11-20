@@ -1,5 +1,5 @@
 # Use OpenJDK 17 as base image
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk
 
 # Set working directory
 WORKDIR /app
@@ -12,3 +12,4 @@ EXPOSE 8080
 
 # Run the JAR
 ENTRYPOINT ["java","-jar","app.jar"]
+
